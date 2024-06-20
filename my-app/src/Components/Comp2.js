@@ -1,7 +1,7 @@
 const Comp2 = ({ list }) => {
   localStorage.setItem("list", list);
   const local = localStorage.getItem("list");
-  console.log("///",local)
+  
     return (
       <div>
         <ul>
