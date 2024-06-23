@@ -34,15 +34,13 @@ const Comp1 = () => {
       setUserInput("");
     }
   };
-
+  
   return (
     <div>
       <h2>To Do List</h2>
       <input type="text" value={userInput} onChange={handleInputChange} />
       <button onClick={handleAddInput}>Add</button>
-
-
-      <Comp2 list={toDoArray} />
+      <Comp2 list={toDoArray} setList={setToDoArray} />
     </div>
   );
 };
